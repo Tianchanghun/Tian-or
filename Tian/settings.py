@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'info.apps.InfoConfig',
+    'banner.apps.BannerConfig',
+    'board.apps.BoardConfig',
+    'join.apps.JoinConfig',
     #이미지 영역
     'imagekit',
     'ckeditor',
