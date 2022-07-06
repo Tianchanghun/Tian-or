@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}
     <title>main</title>
 {% endblock title %}
@@ -6,37 +7,8 @@
 {% endblock meta %}
 {% block content %}
     <div class="container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="{static 'image/default/1.jpg'}" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="{static 'image/default/2.jpg'}" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="{static 'image/default/3.jpg'}" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+        {% include 'top_carosel.html' %}
+        {% include 'main_carosel.html' %}
 
         <div id="ipsum_result">같은 스며들어 힘차게 고행을 가치를 바이며, 청춘 주며, 있는가? 눈이 구할 이상을 구하기 우리의 이상, 발휘하기 듣는다. 속에 몸이 심장의 별과 사막이다.
             무한한 노년에게서 구하기 칼이다. 더운지라 곳이 용감하고 웅대한 인생을 시들어 두기 봄바람이다. 구하지 너의 구할 듣기만 끝에 이상이 못할 온갖 그들에게 이것이다. 산야에 하였으며, 찾아다녀도,
@@ -59,7 +31,7 @@
             봄바람을 풍부하게 약동하다. 품었기 고행을 인간이 풀밭에 실로 있을 약동하다. 그러므로 피어나는 너의 인간이 보이는 관현악이며, 봄바람이다.
         </div>
     </div>
-    <svg class="bi" width="32" height="32" fill="currentColor">
+
 
 {% endblock %}
 {% block css %}
