@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'info.apps.InfoConfig',
     'banner.apps.BannerConfig',
     'board.apps.BoardConfig',
-    'join.apps.JoinConfig',
+    'member.apps.MemberConfig',
     #이미지 영역
     'imagekit',
     'ckeditor',
